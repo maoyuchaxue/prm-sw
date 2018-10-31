@@ -64,7 +64,7 @@
 			};
 		};
 	};
-	L16: memory@100000000 {
+	L16: memory@80000000 {
 		device_type = "memory";
 		reg = <0x1 0x0 0x0 0x10000000>;
 	};
