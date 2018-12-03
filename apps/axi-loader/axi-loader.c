@@ -65,7 +65,7 @@ static inline void my_fread(char *filename, uint64_t *addr) {
 
 void loader(char *imgfile, char *dtbfile, uintptr_t offset) {
   my_fread(imgfile, ddr_base + offset);
-  my_fread(dtbfile, ddr_base + offset + 0x8);
+  // my_fread(dtbfile, ddr_base + offset + 0x8);
 }
 
 void* create_map(size_t size, int fd, off_t offset) {
